@@ -1,0 +1,46 @@
+//
+@font-face {
+    font-family: "GeometriaLight";
+    src: url('../fonts/Geometria-Light.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Geometria";
+    src: url('../fonts/Geometria.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+$global-font-family: -apple-system,
+BlinkMacSystemFont,
+"Geometria",
+Roboto,
+"Helvetica Neue",
+Arial,
+sans-serif !default;
+$global-primary-background: rgba(72, 121, 138, 0.74) !default;
+$global-secondary-background: #858EB4 !default;
+
+$section-primary-background: #C6D5DB !default;
+$section-secondary-background: #CDD0E0 !default;
+
+$overlay-primary-background:rgba(34, 34, 34, 0.56) !default;
+
+$navbar-nav-item-active-color: #fff;
+$global-medium-font-size:1.1rem !default;
+
+$button-font-size:12px;
+$card-title-font-size:1.4rem;
+@import "~uikit/src/scss/variables-theme.scss";
+@import "~uikit/src/scss/mixins-theme.scss";
+
+// 3. Your custom mixin overwrites.
+@mixin hook-card() {
+    color: #000;
+}
+
+
+// 4. Import UIkit.
+@import "~uikit/src/scss/uikit-theme.scss";
