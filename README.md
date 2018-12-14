@@ -19,4 +19,4 @@ This repository is an implementation of the 'Vue.js and Webpack 4 From Scratch' 
   - ESLint for linting
   - Testing using Jest
   -павпывп
-  8n2Yb^N4
+  
