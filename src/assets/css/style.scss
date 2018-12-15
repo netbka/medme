@@ -20,21 +20,23 @@ Roboto,
 "Helvetica Neue",
 Arial,
 sans-serif !default;
-$global-primary-background: rgba(72, 121, 138, 0.171) !default;
-$global-secondary-background: #858EB4 !default;
+// $section-primary-background: rgba(198, 213, 219, 0.136) !default;
+// $section-secondary-background: #CDD0E0 !default;
 
-$section-primary-background: rgba(198, 213, 219, 0.136) !default;
-$section-secondary-background: #CDD0E0 !default;
-
-$overlay-primary-background:rgba(34, 34, 34, 0.56) !default;
+//#4f627f
 
 $navbar-nav-item-active-color: #333;
 $navbar-nav-item-color: #07326a;
 $global-medium-font-size:1.1rem !default;
 
-$button-font-size:12px;
-$card-title-font-size:1.4rem;
-@import "~uikit/src/scss/variables-theme.scss";
+// $button-font-size:12px;
+// $card-title-font-size:1.4rem;
+
+
+
+
+
+@import "variables-theme.scss";
 @import "~uikit/src/scss/mixins-theme.scss";
 
 // 3. Your custom mixin overwrites.

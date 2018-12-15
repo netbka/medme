@@ -2,64 +2,46 @@
 
 <template>
   <div>
-    <div class="uk-section uk-section-primary uk-preserve-color" id="service">
+    <div class="uk-section uk-section-default uk-preserve-color" id="service">
       <div class="uk-container">
+        <div class="uk-panel uk-dark uk-margin-medium">
+          <h2 class="uk-heading-primary uk-heading-line uk-text-center">
+            <span>Our service lines</span>
+          </h2>
+        </div>
+
         <div
           class="uk-text-center uk-grid-match uk-grid-small uk-grid-divider uk-child-width-expand@s"
           uk-grid
         >
           <div>
-            <radio-card propCardIcon></radio-card>
+            <radio-card
+              propCardType="uk-card-secondary"
+              :propCardIconData="radio"
+              propCardTitle="Teleradiology​"
+              propCardSubTitle="Managed Diagnostic Services"
+              propCardBodyText="Our state-of-the-art purpose-built infrastructure supports quality readings that use leading technologies. These technologies facilitate better and high-quality scans that further ensures accurate readings every time."
+            ></radio-card>
           </div>
           <div>
-            <div class="uk-card uk-card-default uk-card-body">Item</div>
+            <radio-card
+              propCardType="uk-card-primary"
+              :propCardIconData="cardio"
+              propCardTitle="Teleradiology​"
+              propCardSubTitle="ECG in remote mode, instantly"
+              propCardBodyText="In few minutes, you can perform an ECG directly without needing to go to the hospital, you will receive a result confirmed by the cardiologist and always have the results available on a web platform accessible everywhere, anytime."
+            ></radio-card>
           </div>
           <div>
-            <div class="uk-card uk-card-default uk-card-body">Item</div>
+            <radio-card
+              propCardType="uk-card-default"
+              :propCardIconData="dp"
+              propCardTitle="Digital Pathology"
+              propCardSubTitle="Diagnosis anywhere, anytime"
+              propCardBodyText="Momentum is growing for pathologists. Scanners are able to scan at a quality easily levelling most microscopies. Combine this with endless collaboration possibilities and TelePathology becomes the de facto industry standard."
+            ></radio-card>
           </div>
-          <!-- <div class="uk-width-1-3@m">
-            <div class="uk-card uk-card-body">
-              <div class="uk-text-lead uk-position-center uk-text-uppercase font-40-line-15">
-                <h2 class="uk-heading-bullet">Service Lines</h2>
-              </div>
-            </div>
-          </div>
-          <div class="uk-width-expand@m">
-            <div class="uk-grid-match uk-child-width-expand@s uk-text-center" uk-grid>
-              <div>
-                <div class="uk-card uk-card-default uk-card-primary uk-card-small">
-                  <div class="uk-card-header">
-                    <div class="uk-grid-small uk-flex-middle" uk-grid>
-                      <div class="uk-width-expand">
-                        <h3 class="uk-card-title uk-margin-remove-bottom">Teleradiology​</h3>
-                        <p class="uk-text-meta uk-margin-remove-top">Managed Diagnostic Services</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="uk-card-body uk-text-left">
-                    <p>Our state-of-the-art purpose-built infrastructure supports quality readings that use leading technologies. These technologies facilitate better and high-quality scans that further ensures accurate readings every time.</p>
-                  </div>
-                  <div class="uk-card-footer">
-                    <a href="#" class="uk-button uk-button-text">Read more</a>
-                  </div>
-                </div>
-
-                <div class="uk-card uk-card-default uk-card-secondary uk-card-small">
-                  <div class="uk-card-header">
-                    <div class="uk-grid-small uk-flex-middle" uk-grid>
-                      <div class="uk-width-expand">
-                        <h3 class="uk-card-title uk-margin-remove-bottom">Telecardiology​</h3>
-                        <p class="uk-text-meta uk-margin-remove-top">ECG in remote mode, instantly</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="uk-card-body uk-text-left">
-                    <p>In few minutes, you can perform an ECG directly without needing to go to the hospital, you will receive a result confirmed by the cardiologist and always have the results available on a web platform accessible everywhere.</p>
-                  </div>
-                  <div class="uk-card-footer">
-                    <a href="#" class="uk-button uk-button-text">Read more</a>
-                  </div>
-                </div>
+          <!-- 
 
                 <div class="uk-card uk-card-default uk-card-default uk-card-small">
                   <div class="uk-card-header">
@@ -89,11 +71,17 @@
 <script>
 import card from "../../components/Card.vue";
 import radio from "../../assets/images/radio.png";
+import cardio from "../../assets/images/cardio.png";
+import dp from "../../assets/images/dp.png";
 
 export default {
   name: "IndexSL",
   data() {
-    return {};
+    return {
+      radio: { img: radio, size: 64 },
+      cardio: { img: cardio, size: 64 },
+      dp: { img: dp, size: 64 }
+    };
   },
   components: {
     "radio-card": card
