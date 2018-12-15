@@ -12,10 +12,7 @@
         <h1
           class="uk-margin-auto uk-margin-auto-vertical hero-main"
           uk-parallax="blur:2; sepia: 100;"
-        >
-          Medme group is an emerging
-          company in tech driven healthcare
-        </h1>
+        >Medme builds infrastructure in the established clusters of digital health, where it operates, and monitors the market in the most innovative points on the map</h1>
         <h3
           class="uk-margin-auto uk-margin-auto-vertical hero-sub"
           uk-parallax="blur: 2; sepia: 100;"
@@ -48,7 +45,7 @@ export default {
 }
 .hero-bg {
   /* background-image: url("../assets/images/hero.png"); */
-  background: #75cbe7 url("../../assets/images/hero.png") no-repeat scroll
+  background: #75cbe7 url("../../assets/images/hero1.jpg") no-repeat scroll
     center center / cover;
   height: 100vh;
 }
@@ -59,7 +56,7 @@ export default {
   color: azure;
 }
 .anlge-bg {
-  background: url("../../assets/images/angle-bg.png") no-repeat scroll center
+  background: url("../../assets/images/angle-bg1.png") no-repeat scroll center
     bottom -120px / 100% auto;
 }
 .fixed,

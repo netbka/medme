@@ -19,13 +19,13 @@
                   <a href="#about" uk-scroll>About us</a>
                 </li>
                 <li>
-                  <a href="#">Service lines</a>
+                  <a href="#service" uk-scroll>Service lines</a>
                 </li>
                 <li>
-                  <a href="#">Team</a>
+                  <a href="#team" uk-scroll>Team</a>
                 </li>
                 <li>
-                  <a href="#">Contacts</a>
+                  <a href="#contact" uk-scroll>Contacts</a>
                 </li>
               </ul>
             </div>
@@ -39,13 +39,13 @@
 <script>
 import menulogo from "../assets/images/iconlogos.png";
 //import hero from "../assets/images/hero.png";
-import introVideo from "../assets/video/hero.mp4";
+//import introVideo from "../assets/video/hero.mp4";
 var isHidden = false;
 export default {
   data: () => ({
-    menulogo: menulogo,
+    menulogo: menulogo
     //hero: hero,
-    introVideo: introVideo
+    //  introVideo: introVideo
   }),
   methods: {
     toggle() {

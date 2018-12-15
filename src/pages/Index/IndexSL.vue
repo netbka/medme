@@ -1,47 +1,46 @@
 
 
 <template>
-  <div>
-    <div class="uk-section uk-section-default uk-preserve-color" id="service">
-      <div class="uk-container">
-        <div class="uk-panel uk-dark uk-margin-medium">
-          <h2 class="uk-heading-primary uk-heading-line uk-text-center">
-            <span>Our service lines</span>
-          </h2>
-        </div>
+  <div class="uk-section uk-section-default uk-preserve-color" id="service">
+    <div class="uk-container">
+      <div class="uk-panel uk-dark uk-margin-medium">
+        <h2 class="uk-heading-primary uk-heading-line uk-text-center">
+          <span>Our service lines</span>
+        </h2>
+      </div>
 
-        <div
-          class="uk-text-center uk-grid-match uk-grid-small uk-grid-divider uk-child-width-expand@s"
-          uk-grid
-        >
-          <div>
-            <radio-card
-              propCardType="uk-card-secondary"
-              :propCardIconData="radio"
-              propCardTitle="Teleradiology​"
-              propCardSubTitle="Managed Diagnostic Services"
-              propCardBodyText="Our state-of-the-art purpose-built infrastructure supports quality readings that use leading technologies. These technologies facilitate better and high-quality scans that further ensures accurate readings every time."
-            ></radio-card>
-          </div>
-          <div>
-            <radio-card
-              propCardType="uk-card-primary"
-              :propCardIconData="cardio"
-              propCardTitle="Teleradiology​"
-              propCardSubTitle="ECG in remote mode, instantly"
-              propCardBodyText="In few minutes, you can perform an ECG directly without needing to go to the hospital, you will receive a result confirmed by the cardiologist and always have the results available on a web platform accessible everywhere, anytime."
-            ></radio-card>
-          </div>
-          <div>
-            <radio-card
-              propCardType="uk-card-default"
-              :propCardIconData="dp"
-              propCardTitle="Digital Pathology"
-              propCardSubTitle="Diagnosis anywhere, anytime"
-              propCardBodyText="Momentum is growing for pathologists. Scanners are able to scan at a quality easily levelling most microscopies. Combine this with endless collaboration possibilities and TelePathology becomes the de facto industry standard."
-            ></radio-card>
-          </div>
-          <!-- 
+      <div
+        class="uk-text-center uk-grid-match uk-grid-small uk-grid-divider uk-child-width-expand@s"
+        uk-grid
+      >
+        <div>
+          <card
+            propCardType="uk-card-secondary"
+            :propCardIconData="radio"
+            propCardTitle="Teleradiology​"
+            propCardSubTitle="Managed Diagnostic Services"
+            propCardBodyText="Our state-of-the-art purpose-built infrastructure supports quality readings that use leading technologies. These technologies facilitate better and high-quality scans that further ensures accurate readings every time."
+          ></card>
+        </div>
+        <div>
+          <card
+            propCardType="uk-card-primary"
+            :propCardIconData="cardio"
+            propCardTitle="Teleradiology​"
+            propCardSubTitle="ECG in remote mode, instantly"
+            propCardBodyText="In few minutes, you can perform an ECG directly without needing to go to the hospital, you will receive a result confirmed by the cardiologist and always have the results available on a web platform accessible everywhere, anytime."
+          ></card>
+        </div>
+        <div>
+          <card
+            propCardType="uk-card-default"
+            :propCardIconData="dp"
+            propCardTitle="Digital Pathology"
+            propCardSubTitle="Diagnosis anywhere, anytime"
+            propCardBodyText="Momentum is growing for pathologists. Scanners are able to scan at a quality easily levelling most microscopies. Combine this with endless collaboration possibilities and TelePathology becomes the de facto industry standard."
+          ></card>
+        </div>
+        <!-- 
 
                 <div class="uk-card uk-card-default uk-card-default uk-card-small">
                   <div class="uk-card-header">
@@ -61,8 +60,7 @@
                 </div>
               </div>
             </div>
-          </div>-->
-        </div>
+        </div>-->
       </div>
     </div>
   </div>
@@ -84,7 +82,7 @@ export default {
     };
   },
   components: {
-    "radio-card": card
+    card: card
 
     // "app-layout-footer": LayoutFooter
   }

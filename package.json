@@ -9,6 +9,7 @@
     "lint": "eslint --ext .js,.vue src",
     "lint:fix": "eslint --ext .js,.vue src --fix",
     "test": "jest",
+    "predeploy": "npm run prod",
     "deploy": "surge ./dist"
   },
   "author": "PEter Mamrukov",
