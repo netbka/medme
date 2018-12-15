@@ -67,8 +67,8 @@
 </template>
 
 <script>
-import ru from "../assets/images/flags/Russian Federation.png";
-import uk from "../assets/images/flags/uk.png";
+import ru from "../../assets/images/flags/Russian Federation.png";
+import uk from "../../assets/images/flags/uk.png";
 export default {
   name: "IndexContact",
   data() {

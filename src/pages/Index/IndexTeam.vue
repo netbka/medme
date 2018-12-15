@@ -213,12 +213,12 @@
 </template>
 
 <script>
-import ilya from "../assets/images/ilya.png";
-import ilyas from "../assets/images/ilyas.png";
-import valentin from "../assets/images/valentin.png";
-import valentins from "../assets/images/valentins.png";
-import nikita from "../assets/images/nikita.png";
-import nikitas from "../assets/images/nikitas.png";
+import ilya from "../../assets/images/ilya.png";
+import ilyas from "../../assets/images/ilyas.png";
+import valentin from "../../assets/images/valentin.png";
+import valentins from "../../assets/images/valentins.png";
+import nikita from "../../assets/images/nikita.png";
+import nikitas from "../../assets/images/nikitas.png";
 
 export default {
   name: "IndexTeam",

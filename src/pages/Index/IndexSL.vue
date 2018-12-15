@@ -2,32 +2,22 @@
 
 <template>
   <div>
-    <!-- <div class="uk-section uk-section-primary uk-preserve-color" id="about">
+    <div class="uk-section uk-section-primary uk-preserve-color" id="service">
       <div class="uk-container">
-        <div class="uk-text-center uk-grid-match" uk-grid>
-          <div class="uk-width-1-3@m">
-            <div class="uk-card uk-card-hover uk-card-secondary uk-card-body">
-              <div class="uk-text-lead uk-position-center uk-text-uppercase font-40-line-15">
-                <h2 class="uk-heading-bullet">About us</h2>
-              </div>
-            </div>
+        <div
+          class="uk-text-center uk-grid-match uk-grid-small uk-grid-divider uk-child-width-expand@s"
+          uk-grid
+        >
+          <div>
+            <radio-card propCardIcon></radio-card>
           </div>
-          <div class="uk-width-expand@m">
-            <div class="uk-card uk-card-default uk-card-body uk-text-left">
-              Healthcare globally saves more and more lives but requires disproportionally higher investments.
-              The share of healthcare in GDPs of the developed countries grew up from 3-4% in the 1950s to 10-11% in Europe today and unbelievable 17% in the US.
-              7.5 trillion dollars are being spent worldwide annually. As all other industries healthcare is and will continue passing through a digital transformation that will dramatically change the landscape of the industry.
-              Medme employs technologies to provide more effective and efficient services in healthcare. Providing patients with higher availability of care and payers with lower costs.
-            </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="uk-section uk-section-secondary uk-preserve-color" id="service">
-      <div class="uk-container">
-        <div class="uk-text-center uk-grid-match" uk-grid>
-          <div class="uk-width-1-3@m">
+          <div>
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+          </div>
+          <!-- <div class="uk-width-1-3@m">
             <div class="uk-card uk-card-body">
               <div class="uk-text-lead uk-position-center uk-text-uppercase font-40-line-15">
                 <h2 class="uk-heading-bullet">Service Lines</h2>
@@ -89,33 +79,24 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div>-->
         </div>
       </div>
-    </div>-->
-    <!-- >-->
-    <app-index-hero></app-index-hero>
-    <app-index-sl></app-index-sl>
-    <app-index-team></app-index-team>
-    <app-index-contact></app-index-contact>
+    </div>
   </div>
 </template>
 
 <script>
-import hero from "./index/IndexHero.vue";
-import SL from "./index/IndexSL.vue";
-import Contact from "./index/IndexContact.vue";
-import Team from "./index/IndexTeam.vue";
+import card from "../../components/Card.vue";
+import radio from "../../assets/images/radio.png";
+
 export default {
-  name: "Index",
+  name: "IndexSL",
   data() {
     return {};
   },
   components: {
-    "app-index-sl": SL,
-    "app-index-hero": hero,
-    "app-index-contact": Contact,
-    "app-index-team": Team
+    "radio-card": card
 
     // "app-layout-footer": LayoutFooter
   }
